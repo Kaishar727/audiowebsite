@@ -1,0 +1,594 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../css/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body, html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-size: 10px;
+}
+
+.title{
+  margin-top:100px;
+  margin-bottom: 50px;
+  
+}
+
+.title h1{
+  text-align:center;
+  font-family: montserrat;
+  font-weight: 600;
+  font-size:80px
+}
+
+.divider{
+border: black 2px solid;
+margin: auto;
+width: 700px;
+height: 0px;
+border-radius: 25px;
+position: relative;
+}
+
+/* Secondary Navbar */ 
+
+.second-navbar{
+  display: flex;
+  padding: 20px;
+}
+
+.secondnav {
+  display: inline-flex;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+  border-radius: 40px;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
+}
+
+.navitem {
+  font-size: 1.5em;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  transition: .3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: Montserrat;
+  font-weight: 500;
+  position: relative;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: .3s;
+  }
+}
+
+.navitem:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+
+
+.navitem:not(.is-active):hover { color: #333; }
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .second-navbar {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .secondnav {
+    flex-direction: column;
+    align-items: center;
+    min-width:70% ;
+  }
+
+  .navitem {
+    margin: 6px 0;
+  }
+}
+
+
+
+
+#audiomenu a:hover {
+  color: black;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3; /* Adjust the z-index for the menu toggle */
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+
+
+
+
+
+
+
+
+/* Carousel */
+
+/******* Fonts Import Start **********/
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+
+
+.review-section-carousel{
+  background-color: #d7d7d7;
+  background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clear {
+  clear: both;
+}
+.recommended-section img {
+  max-width: 100%;
+  border: 0px;
+}
+.recommended-section ul, ol {
+  font-family: Montserrat;
+  list-style: none;
+}
+.recommended-section a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.recommended-section a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+.recommended-section a:hover {
+  color: #e73700;
+}
+.recommended-section h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+.recommended-section h3 {
+  margin: 0 0 10px;
+  line-height: 36px;
+}
+.recommended-section button {
+  outline: none !important;
+}
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.line-title {
+  font-family: Montserrat;
+  position: relative;
+  width: 400px;
+}
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.line-title::after {
+  width: 32px;
+  background: black;
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.recommended-section {
+  padding: 60px 50px;
+  font-family: Montserrat;  
+  margin-bottom: -5%;
+}
+.recommended-section .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.recommended-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.recommended-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.recommended-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.recommended-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.recommended-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.recommended-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.recommended-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.recommended-section .owl-theme.custom-carousel .owl-dots {
+  position: relative;
+  z-index: 5;
+}
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+ .recommended-section h2 {
+    margin-bottom: 32px;
+  }
+ .recommended-section h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  /* -------- Landing page ------- */
+  .recommended-section {
+    padding: 50px 30px;
+  }
+  .recommended-section .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+  .recommended-section .item.active {
+    width: 400px;
+  }
+  .recommended-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .recommended-section h2 {
+    margin-bottom: 32px;
+  }
+  .recommended-section h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .recommended-section .line-title {
+    width: 330px;
+  }
+
+  /* -------- Landing page ------- */
+  .recommended-section {
+    padding: 50px 30px 40px;
+  }
+  .recommended-section .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .recommended-section .item.active {
+    width: 360px;
+  }
+  .recommended-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .recommended-section h2 {
+    margin-bottom: 20px;
+  }
+  .recommended-section h3 {
+    margin: 0 0 8px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .line-title {
+    width: 250px;
+  }
+
+  /* -------- Landing page ------- */
+  .recommended-section {
+    padding: 30px 15px 20px;
+  }
+  .recommended-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .recommended-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .recommended-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+
+.container-carousel{
+  min-width:500px; 
+  max-width:1500px; 
+  margin-top: 50px;
+}
+
+  /* Review Grid */
+
+  
+  .reviewgrid{
+    margin-top:60px;
+    text-align:center; 
+    max-width: 1000px;
+    height: fit-content;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    position: relative; /* Ensure the review grid is a positioned element */
+    z-index: 2; /* Set a lower z-index than the menu toggle */
+  }
+  
+  .reviewgrid a{
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .reviewtile{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    z-index: 1; /* Adjust the z-index of the tiles as needed */
+  }
+  
+  .reviewtile img{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 50%; left: 0; right: 0; 
+    transform: translate(0, -50%); 
+    margin: auto;
+    transition: 0.5s filter linear ;
+    object-fit: contain;
+    padding: 20px;
+  }
+  
+  .reviewtile:hover img{
+    transition: opacity 1s;
+    opacity: 0.2;
+  }
+  
+  .reviewtile:hover .text{
+    color: black;
+    opacity: 1;
+    text-align: center;
+    transition: opacity 1s;
+  }
+  
+  .reviewtile:hover .subtext{
+    color: black;
+    opacity: 1;
+    text-align: center;
+    transition: opacity 1s;
+  }
+  
+  .text{
+    opacity: 0;
+    transition: opacity 0.8s;
+    display: inline-block;
+    position: relative; 
+    top: 40%; left: 0; right: 0; 
+    transform: translate(0, -50%); 
+    text-align: center; 
+    font-weight: 500;
+    font-size: 22px;
+    font-family: montserrat;
+  }
+  
+
+  .subtext{
+    opacity: 0;
+    transition: opacity 0.8s;
+    position: relative; 
+    display: inline-block;
+    top: 50%; left: 0; right: 0; 
+    transform: translate(0, -50%); 
+    text-align: center; 
+    font-weight: 400;
+    font-size: 15px;
+    font-family: montserrat;
+    margin-top: -100px;
+  }
+  
+  .img-shadow-1
+  {
+  -webkit-box-shadow: 0 28px 16px -26px black;
+  -moz-box-shadow: 0 28px 16px -26px black;
+  box-shadow: 0 28px 16px -26px black;
+  }
+  
+  .img-shadow-1:hover
+  {
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  
+  -webkit-box-shadow: 0 58px 36px -56px black;
+  -moz-box-shadow: 0 58px 36px -56px black;
+  box-shadow: 0 58px 36px -56px black;
+  }
+  
+  .img-shadow-1
+  {
+  transition:all .6s ease-in-out;
+  -webkit-transition:all .6s ease-in-out;
+  -moz-transition:all .6s ease-in-out;
+  -ms-transition:all .6s ease-in-out;
+  -o-transition:all .6s ease-in-out;
+  }
+  
+  .img-shadow-1:hover
+  {
+  transition:all .6s ease-in-out;
+  -webkit-transition:all .6s ease-in-out;
+  -moz-transition:all .6s ease-in-out;
+  -ms-transition:all .6s ease-in-out;
+  -o-transition:all .6s ease-in-out;
+  }
+  
+  .image-hover * {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box}
+  .image-hover {
+    position:relative;
+    width:450px;
+    height:200px;
+    display:inline-block;
+    overflow:hidden;
+    background:#fff;
+    border:10px solid #fff;
+    box-shadow:0px 2px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0px 2px 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0px 2px 3px rgba(0, 0, 0, 0.3)}
+  
+  .image-hover a {text-decoration:none}
+  
+  .image-hover img {margin:-100px 0px 0px -100px}
+
+/*!Animations*/
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 0.8s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 0.8s;  
+}
+

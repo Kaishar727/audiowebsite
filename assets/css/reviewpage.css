@@ -1,0 +1,497 @@
+
+
+@font-face {
+  font-family: montserrat;
+  src: url(../css/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+
+
+html {
+  font-family: montserrat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1.3em;
+}
+
+/*!Return to review landing*/
+
+
+.button {
+  margin-top: 50px;
+  width: 40%;
+  font-family: montserrat;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  }
+
+.button:hover {
+  background-color: black;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+
+/*!Criteria CARDS*/
+
+.review-rating p{
+  text-align: center;
+  color: #FFC9B5;
+}
+
+h1 {
+ text-align: center;
+}
+
+.criteria-holder {
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  font-family: montserrat;
+}
+
+.card-content {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  position: relative;
+  display: table; 
+  width: 90%;
+  height: 400px;
+  margin: auto;
+}
+
+.card-info {
+  padding: 30px;
+  background-color: white;
+  display: table-cell;
+  line-height: 1.363em;
+  vertical-align: middle;
+  word-break: keep-all;
+  text-align: justify;
+  position: relative;
+  overflow: auto;
+}
+
+.card-icon {
+  font-size: 3.2em;
+  color: #808080;
+  text-align: center;
+  width: 40%;
+  height: 100%;
+  background-color: #353839!important;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px; 
+  overflow: hidden;
+  position: relative;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  
+}
+
+.card-icon img {
+  width: 70%;
+  height: auto;
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  margin: auto; /* Center the image horizontally */
+  transform: none; /* Reset the previous transform */
+  
+}
+
+.text-area {
+  color: black;
+  font-size: 2em;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 30px;
+
+}
+
+* {
+  box-sizing: border-box; 
+}
+
+.site{
+  overflow: hidden;
+    position: relative;
+    width: 100vw;
+
+}
+
+/*!CSS FOR FINAL REVIEW*/
+
+.review-holder{
+  margin-top: 100px;
+  margin-bottom: 100px; 
+  min-width: 260px;
+  height: 100%;
+  font-family: montserrat;
+  display: flex;
+  flex-direction: column; /* Change to a column layout */
+  align-items: center;
+}
+
+.review-paragraph{
+  padding: 40px;
+  background-color: white;
+  
+}
+
+section {
+  width: 100vw;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #f9f9f9;
+  height: 90vh;
+  overflow: hidden;
+  
+  &:nth-of-type(2n) {
+    background-color: #404040;
+    height: 80vh;
+  }
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.review-rating h1 {
+  font-size: 4em;
+  display: block;
+  color: black;
+  font-weight: 700;
+}
+
+.review-rating p {
+  margin-top: 100px;
+  font-size: 2.5em;
+  font-weight: 300;
+  color: black;
+}
+
+.review-rating a {
+
+  font-weight: 700;
+  color: #373B44;
+  position: relative;
+  
+  &:hover{ 
+    opacity: 0.8;
+  }
+  
+  &:active {
+    top: 1px;
+  }
+}
+
+.review-paragraph{
+ margin-top: -3%;
+ box-sizing: border-box;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ border-radius: 10px;
+}
+
+/*!Color Pick*/
+
+/* Basic Styling */
+
+
+
+.headphone-header .container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  max-height: 60%;
+  display: flex;
+}
+
+/* Columns */
+.left-column {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 500px;
+  max-height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+  max-height: 500px;
+}
+
+
+/* Left Column */
+.left-column img {
+  max-width: 100%;
+  position: absolute;
+ 
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.left-column img.active {
+  opacity: 1;
+}
+
+
+/* Right Column */
+
+/* Product Description */
+.product-description {  
+  border-bottom: 1px solid #E1E8EE;
+  margin-top: 120px;
+
+  backdrop-filter: blur(10px);
+
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+.product-configuration{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+/* Product Configuration */
+.product-color span,
+.cable-config span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #86939E;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Product Color */
+.product-color {
+  margin-bottom: 30px;
+
+}
+
+.color-choose div {
+  display: inline-block;
+}
+
+.color-choose input[type="radio"] {
+  display: none;
+}
+
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.color-choose input[type="radio"] + label span {
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+
+.color-choose input[type="radio"]#color-1 + label span {
+  background-color: black;
+}
+
+.color-choose input[type="radio"]#color-2 + label span {
+  background-color: silver;
+}
+
+.color-choose input[type="radio"]#color-3 + label span {
+  background-color: gray;
+}
+
+.color-choose input[type="radio"]#color-4 + label span {
+  background-color: purple;
+}
+
+.color-choose input[type="radio"]#color-5 + label span {
+  background-color: blue;
+}
+
+.color-choose input[type="radio"]#color-6 + label span {
+  background-color: cyan;
+}
+
+
+.color-choose input[type="radio"]#color-7 + label span {
+  background-color: greenyellow;
+}
+
+.color-choose input[type="radio"]#color-8 + label span {
+  background-color: pink;
+}
+
+.color-choose input[type="radio"]#color-9 + label span {
+  background-color: red;
+}
+
+.color-choose input[type="radio"]#color-10 + label span {
+  background-color: lavender;
+}
+
+.color-choose input[type="radio"]#color-11 + label span {
+  background-color: green;
+}
+
+.color-choose input[type="radio"]#color-12 + label span {
+  background-color: lightblue;
+}
+
+.color-choose input[type="radio"]#color-13 + label span {
+  background-color: whitesmoke;
+}
+
+
+.color-choose input[type="radio"]:checked + label span {
+  background-image: url(../img/icons/icons8-check-90.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Responsive */
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .left-column img {
+    position: relative;
+    width: 500px;
+    right: 50px;
+   
+  }
+  
+}
+
+@media (max-width: 535px) {
+  .left-column img {
+    position: relative;
+    z-index: 0;
+  }
+}
+
+/*!Rating Bar*/
+
+.chart {
+  top: 40px;
+  background: white;
+  justify-content: left; /* Center horizontally */
+  border-radius: 100px;
+  border: 1px solid black;
+  box-shadow: 0 10px 40px -10px black;
+  align-items: center;
+  position: relative;
+  padding: 20px 5px; /* Add padding between the chart and the next text */
+  display: flex;
+  height: 40px;
+  width: 80%;
+  margin: auto; /* Center horizontally */
+}
+  .chart span {
+      /* You can modify the value below to change the distance between the percentage number and the bar */
+      margin-left: 5px;
+      color: black;
+      font-weight: bolder;
+  }
+
+ #value1{
+  font-size: 2em;
+ }
+
+.bar {
+  /* You can modify the total time used for the animation here */
+  animation: load 3s normal forwards;
+  /* 
+  Add a little spice by having a shadow below the bar.
+  Feel free to comment out this line below to have an even LITE version :D 
+  */
+  box-shadow: 0 10px 40px -10px 	#404040;
+
+  border-radius: 100px;
+  background: black;
+  height: 30px;
+  width: 0;
+} 
+
+@keyframes load {
+  0% {
+      width: 0;
+  }
+  100% {
+      /* You need to change the percentage below to match the value in the corresponding <span> */
+      width: 95%;
+  }
+}
+
+
+
+/*! CSS ANIMATIONS*/
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 0.8s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 0.8s;  
+}
