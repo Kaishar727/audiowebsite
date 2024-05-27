@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/img/favicon-16x16.png"
+    />
+
+    <title>Sound Argument</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/reviewpage.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link rel="javascript" type="javascript" href="../../assets/js/script.js">
+
+
+
+    <style>
+      .chart {
+        top: 40px;
+        background: white;
+        justify-content: left; /* Center horizontally */
+        border-radius: 100px;
+        border: 1px solid black;
+        box-shadow: 0 10px 40px -10px black;
+        align-items: center;
+        position: relative;
+        padding: 20px 5px; /* Add padding between the chart and the next text */
+        display: flex;
+        height: 40px;
+        width: 80%;
+        margin: auto; /* Center horizontally */
+      }
+      .chart span {
+        /* You can modify the value below to change the distance between the percentage number and the bar */
+        margin-left: 5px;
+        color: black;
+        font-weight: bolder;
+      }
+
+      .bar {
+        /* You can modify the total time used for the animation here */
+        animation: load 3s normal forwards;
+        /* 
+    Add a little spice by having a shadow below the bar.
+    Feel free to comment out this line below to have an even LITE version :D 
+    */
+        box-shadow: 0 10px 40px -10px #404040;
+
+        border-radius: 100px;
+        background: black;
+        height: 30px;
+        width: 0;
+      }
+
+      @keyframes load {
+        0% {
+          width: 0;
+        }
+        100% {
+          /* You need to change the percentage below to match the value in the corresponding <span> */
+          width: 77%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="nav" style="background-color: black; height: 65px;; padding-top: 0%;">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"> 
+                    <img src="../../assets/img/Header & Nav/white ver.png" alt="Logosoar" width="60" height="50" style="padding-bottom: 4px;">
+                </a>
+    
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="../../html/categories/headphone.html">Reviews</a></li>
+                    <li><a href="../../html/about us/aboutus.html">About Us</a></li>
+                    <li><a href="../../html/news.html">News</a></li>
+    
+                </ul>
+                <span class="navTrigger" style="margin-top:22px;">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+              </span>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <section class="headphone-header">
+      <main class="container">
+        <div class="left-column hidden">
+          <img
+            data-image="color-1"
+            class="active"
+            src="../../assets/img/categories/headphones/hesh-evo.png"
+            alt=""
+          />
+        </div>
+
+        <div class="right-column">
+          <div class="product-description hidden">
+            <span>Headphones</span>
+            <h1>SkullCandy Hesh-Evo</h1>
+            <p>
+              The Skullcandy Hesh-Evo headphones are a stylish and
+              budget-friendly option for music enthusiasts on the go. With a
+              foldable design and active noise cancellation, these headphones
+              promise a blend of convenience and performance. Let's delve into a
+              detailed review.
+            </p>
+          </div>
+
+          <div class="product-configuration hidden">
+            <div class="product-color">
+              <span>Color</span>
+
+              <div class="color-choose">
+                <div>
+                  <input
+                    data-image="color-1"
+                    type="radio"
+                    id="color-1"
+                    name="color"
+                    value="color-1"
+                    checked
+                  />
+                  <label for="color-1"><span></span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="site">
+      <div class="container-fluid gap-5 pt-5 criteria-holder">
+        <div class="row justify-content-center pt-5 pb-5">
+          <div class="col-md-12 col-lg-6 pb-5 hidden">
+            <div class="card-content">
+              <div class="card-icon card-info">
+                <img
+                  src="../../assets/img/icons/white-headphones-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-area card-info">
+                <b>Sound:</b>
+                The Hesh-Evo delivers a respectable sound profile with a notable
+                emphasis on bass. While the lows pack a punch, the mids and
+                highs lack some definition. It's a solid choice for casual
+                listening but may leave audiophiles craving a bit more detail
+                and clarity.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 pb-5 hidden">
+            <div class="card-content">
+              <div class="card-icon card-info">
+                <img
+                  src="../../assets/img/icons/design-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-area card-info">
+                <b>Design:</b>
+                Sporting a sleek and foldable design, the Hesh-Evo is a stylish
+                accessory. The on-ear controls are intuitive, but the
+                predominantly plastic build raises durability concerns.
+                Nevertheless, it's a lightweight and comfortable option for
+                extended wear.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 pb-5 hidden">
+            <div class="card-content">
+              <div class="card-icon card-info">
+                <img
+                  src="../../assets/img/icons/money-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-area card-info">
+                <b>Price:</b>
+                One of the standout features of the Hesh-Evo is its
+                affordability. For the price, you get a good balance of
+                features, making it an appealing choice for budget-conscious
+                consumers looking for a reliable pair of headphones. tag.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 pb-5 hidden">
+            <div class="card-content">
+              <div class="card-icon card-info">
+                <img
+                  src="../../assets/img/icons/performance-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-area card-info">
+                <b>Performance:</b>
+                Bluetooth connectivity is solid, and the inclusion of active
+                noise cancellation is a plus. However, the ANC performance is
+                moderate compared to more premium options. Battery life is
+                satisfactory, providing enough juice for extended listening
+                sessions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-rating">
+      <div class="container-fluid pt-5 review-holder hidden">
+        <div class="container-fluid review-paragraph">
+          <h1>Final Rating</h1>
+          <div class="chart">
+            <div class="bar"></div>
+            <!-- Change the value below -->
+            <span id="value1">77</span>
+          </div>
+          <p>
+            The Skullcandy Hesh-Evo impresses with its budget-friendly price and
+            stylish design. While the sound quality and build could see
+            improvements, these headphones offer a well-rounded package for
+            users looking for a reliable and affordable audio companion.
+            Overall, a commendable choice in its price range.
+          </p>
+        </div>
+        <a href="../../html/categories/headphone.html" class="button hidden"
+          >Back to Reviews</a
+        >
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+    
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html"><img src="../../assets/img/Header & Nav/white ver.png" class="img-fluid" style="height: 8rem; width: 12rem;" alt="logo"></a>
+                          </div>
+                          <div class="footer-text">
+                              <p> Sound argument, we are always here to help you find the best music experiance, come and enjoy music with us and spread your wings!</p>
+                          </div>
+    
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Support</h3>
+                          </div>
+                          <ul style="font-size: small;">
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Security & Privacy</a></li>
+                              <li><a href="#">Terms & Condition</a></li>
+                              <li><a href="#">Contact Us</a></li>
+                              <li><a href="#">Latest News</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Follow Us</h3>
+                          </div>
+                          <div class="footer-social-icon" style="padding-left: 2px;">
+                            <a href="mailto: elaine.yoselyn2005@gmail.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/emailicon.svg" style="width: 5%;" class="icon"> Gmail  </div></a>
+                            <a href="www.instagram.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/instagramicon.svg" style="width: 5%;"class="icon"> Instagram  </div></a>
+                            <a href="www.twitter.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/twittericon.svg" style="width: 5%;"class="icon"> Twitter  </div></a>
+                        </div>
+                      </div>
+                  </div>
+    
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12 col-lg-12 text-center">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2022, All Right Reserved <a href="#">Sound Argument.co</a></p>
+                      </div>
+                  </div>
+    
+              </div>
+          </div>
+      </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+    </script>s
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <script src="../../assets/js/review-page.js"></script>
+  </body>
+</html>

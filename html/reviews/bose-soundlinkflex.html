@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/img/favicon-16x16.png"
+    />
+
+    <title>Sound Argument</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/reviewpage.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link rel="javascript" type="javascript" href="../../assets/js/script.js">
+
+
+    <style>
+      .chart {
+        top: 40px;
+        background: white;
+        justify-content: left; /* Center horizontally */
+        border-radius: 100px;
+        border: 1px solid black;
+        box-shadow: 0 10px 40px -10px black;
+        align-items: center;
+        position: relative;
+        padding: 20px 5px; /* Add padding between the chart and the next text */
+        display: flex;
+        height: 40px;
+        width: 80%;
+        margin: auto; /* Center horizontally */
+      }
+      .chart span {
+        /* You can modify the value below to change the distance between the percentage number and the bar */
+        margin-left: 5px;
+        color: black;
+        font-weight: bolder;
+      }
+
+      .bar {
+        /* You can modify the total time used for the animation here */
+        animation: load 3s normal forwards;
+        /* 
+    Add a little spice by having a shadow below the bar.
+    Feel free to comment out this line below to have an even LITE version :D 
+    */
+        box-shadow: 0 10px 40px -10px #404040;
+
+        border-radius: 100px;
+        background: black;
+        height: 30px;
+        width: 0;
+      }
+
+      @keyframes load {
+        0% {
+          width: 0;
+        }
+        100% {
+          /* You need to change the percentage below to match the value in the corresponding <span> */
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="nav" style="background-color: black; height: 65px;; padding-top: 0%;">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"> 
+                    <img src="../../assets/img/Header & Nav/white ver.png" alt="Logosoar" width="60" height="50" style="padding-bottom: 4px;">
+                </a>
+    
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="../../html/categories/headphone.html">Reviews</a></li>
+                    <li><a href="../../html/about us/aboutus.html">About Us</a></li>
+                    <li><a href="../../html/news.html">News</a></li>
+    
+                </ul>
+                <span class="navTrigger" style="margin-top:22px;">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+              </span>
+            </div>
+    
+        </div>
+    </nav>
+    </header>
+
+    <section class="headphone-header">
+      <main class="container">
+        <div class="left-column hidden">
+          <img
+            data-image="color-1"
+            class="active"
+            src="../../assets/img/categories/speakers/SLFBS_BoseBlk_001_RGB.webp"
+            alt=""
+          />
+          <img
+            data-image="color-2"
+            src="../../assets/img/categories/speakers/SLFBS-LE_CypressGreen_001_RGB_x5b_RGB.webp"
+            alt=""
+          />
+          <img
+            data-image="color-3"
+            src="../../assets/img/categories/speakers/SLFBS_StoneBlue_001_RGB.webp"
+            alt=""
+          />
+          <img
+            data-image="color-4"
+            src="../../assets/img/categories/speakers/SLFBS_WhtSmoke_001_RGB.webp"
+            alt=""
+          />
+        </div>
+
+        <div class="right-column">
+          <div class="product-description hidden">
+            <span>Speakers</span>
+            <h1>Soundlink Flex</h1>
+            <p>
+              The Bose SoundLink Flex is a portable Bluetooth speaker designed
+              for on-the-go music enthusiasts. With a compact and flexible
+              design, it delivers impressive sound quality in a small package.
+              The speaker is rugged and water-resistant, making it suitable for
+              outdoor adventures. Additionally, features like voice assistance
+              and a long battery life enhance its overall versatility.
+            </p>
+          </div>
+
+          <div class="product-configuration hidden">
+            <div class="product-color">
+              <span>Color</span>
+
+              <div class="color-choose">
+                <div>
+                  <input
+                    data-image="color-1"
+                    type="radio"
+                    id="color-1"
+                    name="color"
+                    value="color-1"
+                    checked
+                  />
+                  <label for="color-1"><span></span></label>
+                  <input
+                    data-image="color-2"
+                    type="radio"
+                    id="color-11"
+                    name="color"
+                    value="color-11"
+                  />
+                  <label for="color-11"><span></span></label>
+                  <input
+                    data-image="color-3"
+                    type="radio"
+                    id="color-12"
+                    name="color"
+                    value="color-12"
+                  />
+                  <label for="color-12"><span></span></label>
+                  <input
+                    data-image="color-4"
+                    type="radio"
+                    id="color-13"
+                    name="color"
+                    value="color-13"
+                  />
+                  <label for="color-13"><span></span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="site">
+      <div class="container-fluid gap-5 pt-5 criteria-holder">
+        <div class="row justify-content-center pt-5 pb-5">
+          <div class="col-md-12 col-lg-6 pb-5 hidden">
+            <div class="card-content">
+              <div class="card-icon card-info">
+                <img
+                  src="../../assets/img/icons/white-headphones-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-area card-info">
+                <b>Sound:</b>
+                Bose's reputation for superior sound quality holds true with the
+                SoundLink Flex. Despite its compact size, the speaker produces
+                clear and balanced audio. Bass is impressive, making it suitable
+                for various music genres.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 pb-5 hidden">
+            <div class="card-content">
+              <div class="card-icon card-info">
+                <img
+                  src="../../assets/img/icons/design-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-area card-info">
+                <b>Design:</b>
+                The flexible design of the SoundLink Flex adds a unique touch.
+                The speaker is compact and lightweight, making it easy to carry.
+                The rugged build and water-resistant feature enhance its
+                durability for outdoor use.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 pb-5 hidden">
+            <div class="card-content">
+              <div class="card-icon card-info">
+                <img
+                  src="../../assets/img/icons/money-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-area card-info">
+                <b>Price:</b>
+                While Bose products often come with a premium price tag, the
+                SoundLink Flex offers good value for its sound quality, build,
+                and features. It might be a bit pricier than some competitors,
+                but the Bose brand assurance justifies the cost.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 pb-5 hidden">
+            <div class="card-content">
+              <div class="card-icon card-info">
+                <img
+                  src="../../assets/img/icons/performance-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-area card-info">
+                <b>Performance:</b>
+                The Bluetooth connectivity ensures a hassle-free pairing
+                experience, and the voice assistance feature adds a convenient
+                touch. The long battery life allows for extended listening
+                sessions, making it suitable for travel and outdoor activities
+                tag.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-rating">
+      <div class="container-fluid pt-5 review-holder hidden">
+        <div class="container-fluid review-paragraph">
+          <h1>Final Rating</h1>
+          <div class="chart">
+            <div class="bar"></div>
+            <!-- Change the value below -->
+            <span id="value1">80</span>
+          </div>
+          <p>
+            The Bose SoundLink Flex impresses with its powerful sound, flexible
+            design, and durability. Whether you're indoors or outdoors, the
+            speaker delivers a premium audio experience. While the price point
+            may be higher, the investment in Bose quality is evident. With an
+            overall score of 8/10, the SoundLink Flex is a solid choice for
+            those seeking a portable Bluetooth speaker with top-notch sound
+            performance.
+          </p>
+        </div>
+        <a href="../../html/categories/headphone.html" class="button hidden"
+          >Back to Reviews</a
+        >
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+    
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html"><img src="../../assets/img/Header & Nav/white ver.png" class="img-fluid" style="height: 8rem; width: 12rem;" alt="logo"></a>
+                          </div>
+                          <div class="footer-text">
+                              <p> Sound argument, we are always here to help you find the best music experiance, come and enjoy music with us and spread your wings!</p>
+                          </div>
+    
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Support</h3>
+                          </div>
+                          <ul style="font-size: small;">
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Security & Privacy</a></li>
+                              <li><a href="#">Terms & Condition</a></li>
+                              <li><a href="#">Contact Us</a></li>
+                              <li><a href="#">Latest News</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Follow Us</h3>
+                          </div>
+                          <div class="footer-social-icon" style="padding-left: 2px;">
+                            <a href="mailto: elaine.yoselyn2005@gmail.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/emailicon.svg" style="width: 5%;" class="icon"> Gmail  </div></a>
+                            <a href="www.instagram.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/instagramicon.svg" style="width: 5%;"class="icon"> Instagram  </div></a>
+                            <a href="www.twitter.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/twittericon.svg" style="width: 5%;"class="icon"> Twitter  </div></a>
+                        </div>
+                      </div>
+                  </div>
+    
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12 col-lg-12 text-center">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2022, All Right Reserved <a href="#">Sound Argument.co</a></p>
+                      </div>
+                  </div>
+    
+              </div>
+          </div>
+      </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <script src="../../assets/js/review-page.js"></script>
+  </body>
+</html>
